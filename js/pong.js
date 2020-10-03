@@ -17,6 +17,8 @@ const netHeight = canvas.height;
 const paddleWidth = 10;
 const paddleHeight = 100;
 
+const ballSize = 18;
+
 let upKeyPressed = false;
 let downKeyPressed = false;
 let upKeyPressedAI= false;
@@ -51,10 +53,10 @@ const ai = {
 };
 
 const ball = {
-    x: canvas.width / 2,
-    y: canvas.height / 2,
-    width: 18,
-    height: 18,
+    x: canvas.width / 2 - ballSize / 2,
+    y: canvas.height / 2 - ballSize / 2,
+    width: ballSize,
+    height: ballSize,
     velX: 5,
     velY: 5,
     color: '#ffffff',
