@@ -144,7 +144,7 @@ function update() {
 
   /* ball collision */
   // if ball hits top or bottom wall
-  if (ball.y + ball.height >= canvas.height || ball.y - ball.height <= 0) {
+  if (ball.y + ball.height >= canvas.height || ball.y <= 0) {
     //wallHitSound.play();
     ball.velY = -ball.velY;
   }
